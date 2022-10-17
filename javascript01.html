@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .background-color: red;
+
+    </style>
+
+    <script>
+    
+    function mostrarMenor(){
+        let nr1 = parseInt(document.getElementById("txtNumero1").value);
+        let nr2 = parseInt(document.getElementById("txtNumero2").value);
+
+            if(nr1==nr2){
+                alert("Os números são iguais");
+            }
+
+            else{
+                if(nr1>nr2)
+                alert("Número 1 é maior do que o número 2!");
+
+            else
+                alert("Número 2 é maior do que o número 1!");
+            }
+            
+
+
+
+    /* 
+    ==
+    >
+    <
+    >=
+    <=
+    !=
+    */
+    }
+    </script>
+</head>
+
+<body>
+    <label for="txtNumero1">Numero</label>
+    <input type="text" id="txtNumero1">
+    <label for="txtNumero2">Numero</label>
+    <input type="text" id="txtNumero2">
+    <br/>
+    <button type="button" value="Mostrar o menor" onclick="mostrarMenor()">Mostrar o menor</button>
+</body>
+<script src="js/script01.js"></script>
+</html>
